@@ -1,6 +1,6 @@
 # Golang GeeksforGeeks
 
-![GOLANG](image/README/1720471005061.png)
+![GOLANG](image/README/GOLANG.png)
 
 **Golang** is a procedural and statically typed programming language having the syntax similar to ****C**** programming language. Sometimes it is termed as  ****Go Programming Language**** . It provides a rich standard library, **[garbage collection](https://www.techtarget.com/searchstorage/definition/garbage-collection)**, and dynamic-typing capability. It was developed in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google but launched in 2009 as an open-source programming language and mainly used in Google’s production systems. Golang is one of the most trending programming languages among developers.
 
