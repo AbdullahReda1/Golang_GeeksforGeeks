@@ -64,15 +64,15 @@ Go is known for its support for concurrency, which is the ability to run multipl
 
 ---
 
-|                Category                |        Details        |
-| :-------------------------------------: | :-------------------: |
-|    ****Fundamentals****    | Hello World in Golang |
-| ****Control Statements**** |                      |
-| ****Functions & Methods**** |                      |
-|      ****Structure****      |                      |
-|       ****Arrays****       |                      |
-|       ****Slices****       |                      |
-|       ****Strings****       |                      |
-|      ****Pointers****      |                      |
-|     ****Interfaces****     |                      |
-|     ****Concurrency****     |                      |
+|                Category                |                        Details                        |
+| :-------------------------------------: | :---------------------------------------------------: |
+|    ****Fundamentals****    | Hello World in Golang<br />Identifiers in Go Language |
+| ****Control Statements**** |                                                      |
+| ****Functions & Methods**** |                                                      |
+|      ****Structure****      |                                                      |
+|       ****Arrays****       |                                                      |
+|       ****Slices****       |                                                      |
+|       ****Strings****       |                                                      |
+|      ****Pointers****      |                                                      |
+|     ****Interfaces****     |                                                      |
+|     ****Concurrency****     |                                                      |
