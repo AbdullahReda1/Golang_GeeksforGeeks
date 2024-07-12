@@ -10,6 +10,8 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/AbdullahReda1/Golang_GeeksforGeeks/Fundamentals/packages/exportedpackage"
 )
 
 func main() {
@@ -26,4 +28,5 @@ func main() {
 	//var default			/* Invalid identifier */
 
 	fmt.Println(_example23, example, example23sd, Example, exampLe, exa_mple)
+	fmt.Println(exportedpackage.ExportedVariable)
 }
