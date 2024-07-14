@@ -10,8 +10,7 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/AbdullahReda1/Golang_GeeksforGeeks/Fundamentals/packages/exportedpackage"
+	// The local packages file or its github, but 1st you need to 'on' GO111MODULE or init go.mod and install it to the path.
 )
 
 func main() {
@@ -28,5 +27,5 @@ func main() {
 	//var default			/* Invalid identifier */
 
 	fmt.Println(_example23, example, example23sd, Example, exampLe, exa_mple)
-	fmt.Println(exportedpackage.ExportedVariable)
+	//fmt.Println(exportedpackage.ExportedVariable)  		/* I am Exported Variable */
 }
