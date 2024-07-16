@@ -17,12 +17,19 @@ func main() {
 
 	fmt.Printf("hex:\t  %x\n", 42)
 	fmt.Printf("hex:\t  %#x\n", 42)
+	fmt.Printf("hex:\t  %X\n", 42)
+	fmt.Printf("hex:\t  %#X\n", 42)
 
 	fmt.Printf("oct:\t  %o\n", 42)
 	fmt.Printf("oct:\t  %#o\n", 42)
 
-	//fmt.Printf("syn:\t  %+v\n", 42)
+	fmt.Printf("chr:\t  %c\n", 'A')
+
+	//fmt.Printf("uni:\t  %U\n", ¢)
 
 	p := point{x: true, y: false}
 	fmt.Printf("bol:\t  %+v\n", p)
+	fmt.Printf("def:\t  %v\n", p)
+	fmt.Printf("syn:\t  %#v\n", p)
+	fmt.Printf("typ:\t  %T\n", p)
 }
