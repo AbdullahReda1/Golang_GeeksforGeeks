@@ -12,6 +12,23 @@ func main() {
 	fmt.Println("dec:\t ", 42)
 	fmt.Printf("dec:\t  %d\n", 42)
 
+	num := 12345.6789
+	smallNum := 0.00012345
+	bigNum := 123456789.0
+
+	fmt.Printf("flt:\t  %f\n", num)
+	fmt.Printf("flt:\t  %F\n", num)
+	fmt.Printf("flt:\t  %g\n", num)
+	fmt.Printf("flt:\t  %G\n", num)
+	fmt.Printf("flt:\t  %f\n", smallNum)
+	fmt.Printf("flt:\t  %F\n", smallNum)
+	fmt.Printf("flt:\t  %g\n", smallNum)
+	fmt.Printf("flt:\t  %G\n", smallNum)
+	fmt.Printf("flt:\t  %f\n", bigNum)
+	fmt.Printf("flt:\t  %F\n", bigNum)
+	fmt.Printf("flt:\t  %g\n", bigNum)
+	fmt.Printf("flt:\t  %G\n", bigNum)
+
 	fmt.Printf("bin:\t  %b\n", 42)
 	fmt.Printf("bin:\t  %#b\n", 42)
 
