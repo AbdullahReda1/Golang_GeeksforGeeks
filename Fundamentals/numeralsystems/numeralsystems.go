@@ -23,13 +23,21 @@ func main() {
 	fmt.Printf("oct:\t  %o\n", 42)
 	fmt.Printf("oct:\t  %#o\n", 42)
 
+	str := "世界"
 	fmt.Printf("chr:\t  %c\n", 'A')
-
-	//fmt.Printf("uni:\t  %U\n", ¢)
+	fmt.Printf("str:\t  %s\n", str)
 
 	p := point{x: true, y: false}
 	fmt.Printf("bol:\t  %+v\n", p)
 	fmt.Printf("def:\t  %v\n", p)
 	fmt.Printf("syn:\t  %#v\n", p)
+
 	fmt.Printf("typ:\t  %T\n", p)
+	fmt.Printf("typ:\t  %T\n", 42)
+	fmt.Printf("typ:\t  %T\n", 4.2)
+
+	var r rune = 'a'
+	fmt.Printf("uni:\t  %U\n", r)
+	fmt.Printf("uni:\t  %U\n", str[0])
+	fmt.Printf("uni:\t  %U\n", str[1])
 }
