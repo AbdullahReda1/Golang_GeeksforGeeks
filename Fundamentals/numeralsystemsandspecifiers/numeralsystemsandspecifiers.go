@@ -8,53 +8,69 @@ type point struct {
 }
 
 func main() {
-	print("dec:      ", 42, "\n")
-	fmt.Println("dec:\t ", 42)
-	fmt.Printf("dec:\t  %d\n", 42)
+	print("dec:              ", 42, "\n") // Printing a decimal number using print
+	fmt.Println("dec:\t         ", 42)    // Printing a decimal number using fmt.Println
+	fmt.Printf("dec(%%d):\t  %d\n", 42)   // Printing a decimal number using fmt.Printf with %d
 
 	num := 12345.6789
 	smallNum := 0.00012345
 	bigNum := 123456789.0
 
-	fmt.Printf("flt:\t  %f\n", num)
-	fmt.Printf("flt:\t  %F\n", num)
-	fmt.Printf("flt:\t  %g\n", num)
-	fmt.Printf("flt:\t  %G\n", num)
-	fmt.Printf("flt:\t  %f\n", smallNum)
-	fmt.Printf("flt:\t  %F\n", smallNum)
-	fmt.Printf("flt:\t  %g\n", smallNum)
-	fmt.Printf("flt:\t  %G\n", smallNum)
-	fmt.Printf("flt:\t  %f\n", bigNum)
-	fmt.Printf("flt:\t  %F\n", bigNum)
-	fmt.Printf("flt:\t  %g\n", bigNum)
-	fmt.Printf("flt:\t  %G\n", bigNum)
+	// Printing floating-point numbers using different verbs
+	fmt.Printf("flt(%%f):\t  %f\n", num)      // Using %f
+	fmt.Printf("flt(%%F):\t  %F\n", num)      // Using %F
+	fmt.Printf("flt(%%g):\t  %g\n", num)      // Using %g
+	fmt.Printf("flt(%%G):\t  %G\n", num)      // Using %G
+	fmt.Printf("flt(%%f):\t  %f\n", smallNum) // Using %f
+	fmt.Printf("flt(%%F):\t  %F\n", smallNum) // Using %F
+	fmt.Printf("flt(%%g):\t  %g\n", smallNum) // Using %g
+	fmt.Printf("flt(%%G):\t  %G\n", smallNum) // Using %G
+	fmt.Printf("flt(%%f):\t  %f\n", bigNum)   // Using %f
+	fmt.Printf("flt(%%F):\t  %F\n", bigNum)   // Using %F
+	fmt.Printf("flt(%%g):\t  %g\n", bigNum)   // Using %g
+	fmt.Printf("flt(%%G):\t  %G\n", bigNum)   // Using %G
 
-	fmt.Printf("bin:\t  %b\n", 42)
-	fmt.Printf("bin:\t  %#b\n", 42)
+	// Printing integer in binary format
+	fmt.Printf("bin(%%b):\t  %b\n", 42)   // Using %b
+	fmt.Printf("bin(%%#b):\t  %#b\n", 42) // Using %#b
 
-	fmt.Printf("hex:\t  %x\n", 42)
-	fmt.Printf("hex:\t  %#x\n", 42)
-	fmt.Printf("hex:\t  %X\n", 42)
-	fmt.Printf("hex:\t  %#X\n", 42)
+	// Printing integer in hexadecimal format
+	fmt.Printf("hex(%%x):\t  %x\n", 42)   // Using %x
+	fmt.Printf("hex(%%#x):\t  %#x\n", 42) // Using %#x
+	fmt.Printf("hex(%%X):\t  %X\n", 42)   // Using %X
+	fmt.Printf("hex(%%#X):\t  %#X\n", 42) // Using %#X
 
-	fmt.Printf("oct:\t  %o\n", 42)
-	fmt.Printf("oct:\t  %#o\n", 42)
+	// Printing integer in octal format
+	fmt.Printf("oct(%%o):\t  %o\n", 42)   // Using %o
+	fmt.Printf("oct(%%#o):\t  %#o\n", 42) // Using %#o
 
 	str := "世界"
-	fmt.Printf("chr:\t  %c\n", 'A')
-	fmt.Printf("str:\t  %s\n", str)
+	// Printing character and string
+	fmt.Printf("chr(%%c):\t  %c\n", 'A') // Using %c
+	fmt.Printf("str(%%s):\t  %s\n", str) // Using %s
+
+	// Printing floating-point number in scientific notation
+	fmt.Printf("sci(%%e):\t  %e\n", 4.2) // Using %e
+	fmt.Printf("sci(%%E):\t  %E\n", 4.2) // Using %E
 
 	p := point{x: true, y: false}
-	fmt.Printf("bol:\t  %+v\n", p)
-	fmt.Printf("def:\t  %v\n", p)
-	fmt.Printf("syn:\t  %#v\n", p)
+	// Printing struct
+	fmt.Printf("bol(%%+v):\t  %+v\n", p) // Using %+v
+	fmt.Printf("def(%%v):\t  %v\n", p)   // Using %v
+	fmt.Printf("syn(%%#v):\t  %#v\n", p) // Using %#v
 
-	fmt.Printf("typ:\t  %T\n", p)
-	fmt.Printf("typ:\t  %T\n", 42)
-	fmt.Printf("typ:\t  %T\n", 4.2)
+	// Printing type
+	fmt.Printf("typ(%%T):\t  %T\n", p)   // Using %T for struct
+	fmt.Printf("typ(%%T):\t  %T\n", 42)  // Using %T for integer
+	fmt.Printf("typ(%%T):\t  %T\n", 4.2) // Using %T for float
 
 	var r rune = 'a'
-	fmt.Printf("uni:\t  %U\n", r)
-	fmt.Printf("uni:\t  %U\n", str[0])
-	fmt.Printf("uni:\t  %U\n", str[1])
+	// Printing Unicode code point
+	fmt.Printf("uni(%%U):\t  %U\n", r)      // Using %U for rune
+	fmt.Printf("uni(%%U):\t  %U\n", str[0]) // Using %U for first byte of string
+	fmt.Printf("uni(%%U):\t  %U\n", str[1]) // Using %U for second byte of string
+
+	// Printing pointer
+	fmt.Printf("ptr(%%p):\t  %p\n", &num)  // Using %p
+	fmt.Printf("ptr(%%p):\t  %#p\n", &num) // Using %#p
 }
