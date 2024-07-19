@@ -3,17 +3,22 @@ package main
 import "fmt"
 
 func main() {
+	// Print table header
 	fmt.Printf("\tDec\t|\tSymbol\t|\tHex\t|\tBinary\n")
+
+	// Loop from 32 to 126 to print the ASCII characters and their representations
 	for i := 32; i <= 126; i++ {
+		// Print a separator line
 		fmt.Printf("----------------|---------------|---------------|---------------------\n")
+		// Print the decimal, symbol, hexadecimal, and binary representations of the ASCII character
 		fmt.Printf("\t%d\t|\t%q\t|\t%x\t|\t%b\n", i, i, i, i)
 	}
+
+	// Print the final separator line
 	fmt.Printf("----------------------------------------------------------------------\n")
 }
 
-/*
-	OUTPUT:
-
+/* OUTPUT:
         Dec     |       Symbol  |       Hex     |       Binary
 ----------------|---------------|---------------|---------------------
         32      |       ' '     |       20      |       100000
