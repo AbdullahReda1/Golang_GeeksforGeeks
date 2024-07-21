@@ -1,7 +1,11 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	// Use of var to declare a variable
+	var msg string = "Hello world"
+	fmt.Printf(msg)
 }
 
 /*
